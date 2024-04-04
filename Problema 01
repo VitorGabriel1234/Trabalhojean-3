@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int x, y;
+
+    printf("Digite o valor de x: ");
+    scanf("%d", &x);
+    printf("Digite o valor de y: ");
+    scanf("%d", &y);
+
+    // Comparar os endereços
+    if (&x > &y) {
+        printf("O conteúdo do maior endereço é: %d\n", x);
+    } else {
+        printf("O conteúdo do maior endereço é: %d\n", y);
+    }
+
+    return 0;
+}
